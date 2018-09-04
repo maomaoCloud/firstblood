@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="toutiao-api" />
+        <module name="toutiao-common" />
+        <module name="toutiao-dao" />
+        <module name="toutiao-pojo" />
+        <module name="toutiao-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="toutiao-admin" target="1.8" />
+      <module name="toutiao-api" target="1.8" />
+      <module name="toutiao-common" target="1.7" />
+      <module name="toutiao-dao" target="1.8" />
+      <module name="toutiao-pojo" target="1.8" />
+      <module name="toutiao-service" target="1.8" />
+      <module name="toutiao-web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

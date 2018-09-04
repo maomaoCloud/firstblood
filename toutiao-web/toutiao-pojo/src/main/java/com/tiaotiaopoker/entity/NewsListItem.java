@@ -60,7 +60,7 @@ public class NewsListItem {
         item.setTitle(hn.getNewsTitle());
         item.setImg(hn.getNewsCoverImg());
         item.setDate(new DateTime(hn.getNewsCreateTime()).toString("yyyy-MM-dd"));
-        item.setDateDesc(DateUtils.dateDesc(hn.getNewsCreateTime()));
+        item.setDateDesc( DateUtils.dateDesc(hn.getNewsCreateTime()));
         return item;
     }
 }

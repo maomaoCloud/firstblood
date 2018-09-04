@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/toutiao-api/toutiao-api.iml" filepath="$PROJECT_DIR$/toutiao-api/toutiao-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toutiao-common/toutiao-common.iml" filepath="$PROJECT_DIR$/toutiao-common/toutiao-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toutiao-dao/toutiao-dao.iml" filepath="$PROJECT_DIR$/toutiao-dao/toutiao-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toutiao-pojo/toutiao-pojo.iml" filepath="$PROJECT_DIR$/toutiao-pojo/toutiao-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toutiao-service/toutiao-service.iml" filepath="$PROJECT_DIR$/toutiao-service/toutiao-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toutiao-web.iml" filepath="$PROJECT_DIR$/toutiao-web.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="toutiao-admin:war">
+    <output-path>$PROJECT_DIR$/toutiao-admin/target</output-path>
+    <root id="archive" name="toutiao-admin.war">
+      <element id="artifact" artifact-name="toutiao-admin:war exploded" />
+    </root>
+  </artifact>
+</component>
