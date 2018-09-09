@@ -21,6 +21,7 @@
           </element>
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-lgpl:0.9.5" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-asl:0.9.5" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.7" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:2.0.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.0.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:5.0.8.RELEASE" />

@@ -16,4 +16,8 @@ public class Constants {
      */
     public static final String NULL_STR = "NULL";
 
+    public final static class DataBaseCommon {
+        public static final Integer IS_DELETE_FALSE = 0;
+        public static final Integer IS_DELETE_TRUE  = 1;
+    }
 }
