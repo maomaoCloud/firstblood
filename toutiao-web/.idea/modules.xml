@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/toutiao-admin/toutiao-admin.iml" filepath="$PROJECT_DIR$/toutiao-admin/toutiao-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/toutiao-api/toutiao-api.iml" filepath="$PROJECT_DIR$/toutiao-api/toutiao-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/toutiao-common/toutiao-common.iml" filepath="$PROJECT_DIR$/toutiao-common/toutiao-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/toutiao-dao/toutiao-dao.iml" filepath="$PROJECT_DIR$/toutiao-dao/toutiao-dao.iml" />

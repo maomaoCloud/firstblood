@@ -1,3 +1,4 @@
+com/tiaotiaopoker/common/Pagination.class
 com/tiaotiaopoker/entity/NewsListItem.class
 com/tiaotiaopoker/pojo/FileLogExample$GeneratedCriteria.class
 com/tiaotiaopoker/pojo/HeadlineNews.class

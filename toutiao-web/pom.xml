@@ -8,7 +8,6 @@
     <packaging>pom</packaging>
 
     <name>toutiao-web</name>
-    <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
     <modules>
         <module>toutiao-pojo</module>
@@ -16,6 +15,7 @@
         <module>toutiao-dao</module>
         <module>toutiao-api</module>
         <module>toutiao-common</module>
+        <module>toutiao-admin</module>
     </modules>
 
     <properties>

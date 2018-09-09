@@ -1,6 +1,7 @@
 package com.tiaotiaopoker.service.impl;
 
 import com.tiaotiaopoker.StringUtils;
+import com.tiaotiaopoker.common.Pagination;
 import com.tiaotiaopoker.dao.FileLogMapper;
 import com.tiaotiaopoker.pojo.FileLog;
 import com.tiaotiaopoker.service.FileLogService;

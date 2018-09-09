@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="toutiao-admin" />
         <module name="toutiao-api" />
         <module name="toutiao-common" />
         <module name="toutiao-dao" />
