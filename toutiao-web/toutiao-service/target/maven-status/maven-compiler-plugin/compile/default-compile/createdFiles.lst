@@ -1,2 +1,4 @@
-com/tiaotiaopoker/service/impl/HeadlineNewsServiceImpl.class
+com/tiaotiaopoker/service/FileLogService.class
+com/tiaotiaopoker/service/impl/FileLogServiceImpl.class
 com/tiaotiaopoker/service/HeadlineNewsService.class
+com/tiaotiaopoker/service/impl/HeadlineNewsServiceImpl.class

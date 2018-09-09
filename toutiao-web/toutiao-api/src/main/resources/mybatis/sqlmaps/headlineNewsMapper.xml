@@ -189,7 +189,7 @@
         <if test="typeId != '' and typeId != null">
             and NEWS_TYPE= #{typeId,jdbcType=VARCHAR}
         </if>
-
+        ORDER BY NEWS_SORT DESC,NEWS_CREATE_TIME DESC
     </select>
 
     <select id="countNewsByCondition" parameterType="java.util.Map" resultType="java.lang.Integer">

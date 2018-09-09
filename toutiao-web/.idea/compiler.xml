@@ -16,11 +16,11 @@
     <bytecodeTargetLevel>
       <module name="toutiao-admin" target="1.8" />
       <module name="toutiao-api" target="1.8" />
-      <module name="toutiao-common" target="1.7" />
+      <module name="toutiao-common" target="1.8" />
       <module name="toutiao-dao" target="1.8" />
       <module name="toutiao-pojo" target="1.8" />
       <module name="toutiao-service" target="1.8" />
-      <module name="toutiao-web" target="1.7" />
+      <module name="toutiao-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

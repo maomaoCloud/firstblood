@@ -1,2 +1,7 @@
-com/tiaotiaopoker/pojo/HeadlineNews.class
 com/tiaotiaopoker/entity/NewsListItem.class
+com/tiaotiaopoker/pojo/FileLogExample$GeneratedCriteria.class
+com/tiaotiaopoker/pojo/HeadlineNews.class
+com/tiaotiaopoker/pojo/FileLogExample$Criterion.class
+com/tiaotiaopoker/pojo/FileLogExample.class
+com/tiaotiaopoker/pojo/FileLog.class
+com/tiaotiaopoker/pojo/FileLogExample$Criteria.class
