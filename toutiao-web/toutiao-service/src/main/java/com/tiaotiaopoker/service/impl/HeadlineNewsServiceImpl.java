@@ -2,6 +2,7 @@ package com.tiaotiaopoker.service.impl;
 
 
 import com.tiaotiaopoker.StringUtils;
+import com.tiaotiaopoker.common.Pagination;
 import com.tiaotiaopoker.entity.NewsListItem;
 import com.tiaotiaopoker.pojo.HeadlineNews;
 import com.tiaotiaopoker.service.HeadlineNewsService;
@@ -19,6 +20,23 @@ public class HeadlineNewsServiceImpl implements HeadlineNewsService {
 
     @Autowired
     private HeadlineNewsMapper headlineNewsMapper;
+
+    @Override
+    public List<HeadlineNews> queryNewsByCondition(HeadlineNews news, Pagination page) {
+        Map<String, Object> paramMap = new HashMap<>();
+        if (!StringUtils.isBlank(news.getNewsTitle())) {
+            paramMap.put("newsTitle", news.getNewsTitle());
+        }
+        if (!StringUtils.isBlank(news.getNewsType())) {
+            paramMap.put("newsType", news.getNewsType());
+        }
+        if (null != news.getNewsStatus()) {
+            paramMap.put("newsStatus", news.getNewsStatus());
+        }
+        List<HeadlineNews> list = headlineNewsMapper.queryNewsByPage(paramMap);
+        page.setTotal(headlineNewsMapper.countNewsByCondition(paramMap));
+        return list;
+    }
 
     @Override
     public Map<String, Object> queryNewsByPage(String typeId,
@@ -58,6 +76,26 @@ public class HeadlineNewsServiceImpl implements HeadlineNewsService {
         } else {
             news.setNewsUpdateTime(new Date());
             result = headlineNewsMapper.updateByPrimaryKeySelective(news);
+        }
+        return result;
+    }
+
+    @Override
+    public int editNewsBySelective(HeadlineNews news) {
+        return headlineNewsMapper.updateByPrimaryKeySelective(news);
+    }
+
+    @Override
+    public int setNewsSort(HeadlineNews news) {
+        int result = 0;
+        result = headlineNewsMapper.updateByPrimaryKeySelective(news);
+        Map<String, Object> paramMap = new HashMap<>();
+        paramMap.put("newsSort", news.getNewsSort());
+        List<HeadlineNews> list = headlineNewsMapper.queryNewsByPage(paramMap);
+        //指定位置后的news sort+1
+        for (HeadlineNews headlineNews : list) {
+            headlineNews.setNewsSort(headlineNews.getNewsSort() + 1);
+            result = headlineNewsMapper.updateByPrimaryKeySelective(headlineNews);
         }
         return result;
     }
