@@ -12,17 +12,25 @@ import java.util.Date;
 public class HeadlineNews {
 
     private String newsId;
+
     private String newsTitle;
+
     private String newsCoverImg;
+
     private Date newsCreateTime;
+
     private Date newsUpdateTime;
-    @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
-    private Date newsStartTime;
-    @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
-    private Date newsEndTime;
+
     private Integer newsSort;
+
     private String newsType;
+
     private Integer newsStatus;
+
+    private Long newsBrowseCount;
+
+    private String newsLink;
+
     private String newsDetail;
 
     public String getNewsId() {
@@ -65,22 +73,6 @@ public class HeadlineNews {
         this.newsUpdateTime = newsUpdateTime;
     }
 
-    public Date getNewsStartTime() {
-        return newsStartTime;
-    }
-
-    public void setNewsStartTime(Date newsStartTime) {
-        this.newsStartTime = newsStartTime;
-    }
-
-    public Date getNewsEndTime() {
-        return newsEndTime;
-    }
-
-    public void setNewsEndTime(Date newsEndTime) {
-        this.newsEndTime = newsEndTime;
-    }
-
     public Integer getNewsSort() {
         return newsSort;
     }
@@ -103,6 +95,22 @@ public class HeadlineNews {
 
     public void setNewsStatus(Integer newsStatus) {
         this.newsStatus = newsStatus;
+    }
+
+    public Long getNewsBrowseCount() {
+        return newsBrowseCount;
+    }
+
+    public void setNewsBrowseCount(Long newsBrowseCount) {
+        this.newsBrowseCount = newsBrowseCount;
+    }
+
+    public String getNewsLink() {
+        return newsLink;
+    }
+
+    public void setNewsLink(String newsLink) {
+        this.newsLink = newsLink;
     }
 
     public String getNewsDetail() {

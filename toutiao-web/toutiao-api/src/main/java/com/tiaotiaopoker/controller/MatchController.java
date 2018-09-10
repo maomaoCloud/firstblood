@@ -1,14 +1,14 @@
 package com.tiaotiaopoker.controller;
 
+import com.github.pagehelper.PageHelper;
 import com.tiaotiaopoker.JsonResult;
 import com.tiaotiaopoker.pojo.MatchWithBLOBs;
 import com.tiaotiaopoker.service.MatchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 /**
  * Created by xiekang on 2018/9/9.
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController()
 @RequestMapping("match")
 @Scope("prototype")
-public class MatchController  extends  BaseController {
+public class MatchController extends BaseController {
     @Autowired
     private MatchService matchService;
 
@@ -30,5 +30,21 @@ public class MatchController  extends  BaseController {
             e.printStackTrace();
             return JsonResult.FAILED( "添加失败！" );
         }
+    }
+
+    @RequestMapping(value = "{pageNum}/{pageSize}",
+                    method = RequestMethod.POST)
+    public JsonResult getMatch(@PathVariable("pageNum") Integer pageNum,
+                               @PathVariable("pageSize") Integer pageSize) {
+        JsonResult jsonResult;
+        try {
+            Map<String, Object> resultMap = matchService.getMatchList( pageNum, pageSize );
+            jsonResult = JsonResult.SUCCESS();
+            jsonResult.setResData( resultMap );
+        } catch (Exception e) {
+            jsonResult = JsonResult.FAILED( "赛事列表接口异常" );
+            e.printStackTrace();
+        }
+        return jsonResult;
     }
 }
